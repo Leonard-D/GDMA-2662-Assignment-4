@@ -17,7 +17,9 @@
         - Col-Lg
 
 6.0 - Components: specific designed components
-        - Img-id  
+        - Images
+        - Navigation 
+        - Form
 
  7.0 - Utilities:
         - Screen Reader   
@@ -36,12 +38,51 @@
         -ms-box-sizing: border-box;
         box-sizing: border-box;
 }
+
+html {
+        font-size: 15px;
+        text-align: center;
+}
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
 /* ----- TYPOGRAPHY ----- */
 
+div > i {
+        color: #fff;
+        padding: 0px 0px 0px 30px;
+        font-size: 1.5rem;
+}
+h1,
+span {
+        text-align: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+}
+h2 {
+        font: 2rem 'Lexend', sans-serif;
+}
+h3 {
+        font: 1.7rem 'Lato', sans-serif;
+}
+span {
+        display: block;
+}
+header > div > p:first-of-type {
+        text-align: center;
+        font-family: 'Lexend', sans-serif;
+}
+a {
+        text-decoration: none;
+}
+p > a {
+        font-family: 'Inter', sans-serif; 
+        background-color: #FECA5C;
+        padding: 15px 15px;
+        border-radius: 20px;
+        color: #fff;
+}
 /*--------------------------------------------------------------
     5.0 - OBJECTS
 -------------------------------------------------------------- */
@@ -205,7 +246,54 @@
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+/* ----- IMAGES ----- */
+body > header {
+        background: url(../img/splatter-bg.jpg) no-repeat;
+        background-size: cover;
+        padding-bottom: 30px;
+}
 
+#smilelymoney {
+        background: url(../img/smileymoney.jpg) no-repeat;
+}
+/* ----- NAVIGATION ----- */
+nav {
+        text-align: center;
+}
+
+nav ul {
+        list-style-type: none;
+        padding: 0px;
+}
+nav li {
+        display: inline-block;
+        margin: 0px 0px 0px 20px;
+}
+nav li > a {
+        color: #fff;
+}
+nav li > a:hover {
+        border-bottom: 1px solid #fff;
+}
+/* ----- FORM ----- */
+
+form {
+        position: relative;
+}
+form > i {
+        position:absolute;
+        left: 120px;
+        top: 0px;
+        padding: 13px 79px;
+        color: #000;
+}
+input  {
+        background-color: white;
+        border: 1px solid #000;
+        border-radius: 30px;
+        margin-left: 70px;
+        padding: 5px;
+}
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
