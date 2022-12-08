@@ -20,6 +20,10 @@
         - Images
         - Navigation 
         - Form
+        - Footer
+        - Col-Sm
+        - Col-Md
+        - Col-Lg
 
  7.0 - Utilities:
         - Screen Reader   
@@ -73,6 +77,9 @@ header > div > p:first-of-type {
         text-align: center;
         font-family: 'Lexend', sans-serif;
 }
+header > div > p:last-of-type {
+        padding-top: 50px;
+}
 a {
         text-decoration: none;
 }
@@ -82,6 +89,9 @@ p > a {
         padding: 15px 15px;
         border-radius: 20px;
         color: #fff;
+}
+blockquote {
+        font-style: italic;
 }
 /*--------------------------------------------------------------
     5.0 - OBJECTS
@@ -247,14 +257,57 @@ p > a {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 /* ----- IMAGES ----- */
-body > header {
+body > header,
+footer {
         background: url(../img/splatter-bg.jpg) no-repeat;
         background-size: cover;
         padding-bottom: 30px;
 }
 
-#smilelymoney {
+#smilely-money {
         background: url(../img/smileymoney.jpg) no-repeat;
+        padding: 120px 0px;
+        margin-left: 70px;
+}
+#outdoor-hoodie {
+        background: url(../img/hoodie-outdoor.jpg) no-repeat;
+        padding: 120px 0px;
+        margin-left: 70px;
+}
+#iphone {
+        background: url(../img/iphone.jpg) no-repeat;
+        padding: 120px 0px;
+        margin-left: 70px;
+}
+#hoodie {
+        background: url(../img/hoodie.jpg) no-repeat;
+        padding: 200px 0px;
+        text-align: left;
+}
+#products {
+        background: url(../img/products.jpg) no-repeat;
+        padding: 200px 0px;
+        text-align: right;
+}
+#disco-dottie {
+        background: url(../img/disco-dottie.jpg) no-repeat ;
+        background-size: cover;
+}
+#tobia {
+        background: url(../img/tobiafonseca.jpg) no-repeat ;
+        background-size: cover;
+}
+#super-doodle {
+        background: url(../img/super-doodledo.jpg) no-repeat ;
+        background-size: cover;
+}
+#adena {
+        background: url(../img/adena-j.jpg) no-repeat ;
+        background-size: cover;
+}
+#grundy {
+        background: url(../img/jo-grundy.jpg) no-repeat ;
+        background-size: cover;
 }
 /* ----- NAVIGATION ----- */
 nav {
@@ -294,6 +347,50 @@ input  {
         margin-left: 70px;
         padding: 5px;
 }
+/* ----- FOOTER ----- */
+footer img,
+footer ul {
+        text-align: left;
+        list-style-type: none;
+        padding: 0px;
+        margin-top: 40px;
+}
+footer ul > li {
+        font-size: 1rem;
+}
+footer ul:last-of-type > li:nth-child(5),
+footer ul:last-of-type > li:nth-child(6),
+footer ul:last-of-type > li:nth-child(7),
+footer ul:last-of-type > li:nth-child(8) {
+        display: inline-block;
+}
+/* ----- COL-SM ----- */
+#hoodie h2,
+#products h2 {
+        color: #fff;
+}
+#hoodie > header,
+#hoodie > p {
+        padding-left: 30px;
+}
+#products > header,
+#products > p {
+        padding-right: 30px;
+}
+#disco-dottie > p,
+#tobia > p,
+#super-doodle > p,
+#adena > p,
+#grundy > p {
+        font: 2rem 'Lexend', sans-serif;
+        color: #fdc75e;
+}
+blockquote > footer {
+        background: none;
+}
+/* ----- COL-MD ----- */
+
+/* ----- COL-LG ----- */
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
