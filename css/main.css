@@ -73,12 +73,23 @@ h3 {
 span {
         display: block;
 }
-header > div > p:first-of-type {
+header > div > div > p:first-of-type > span {
+        text-transform: none;
+}
+header > div > p:first-of-type,
+header > div > div > p:first-of-type{
         text-align: center;
         font-family: 'Lexend', sans-serif;
 }
 header > div > p:last-of-type {
         padding-top: 50px;
+}
+header > div > div > a {
+        color: #fff;
+        font: 1rem 'Inter', sans-serif;
+}
+header > div > div > a > i {
+        font-size: 3rem;
 }
 a {
         text-decoration: none;
@@ -89,6 +100,16 @@ p > a {
         padding: 15px 15px;
         border-radius: 20px;
         color: #fff;
+}
+p {
+        font: 1rem 'Lato', sans-serif;
+        padding-bottom: 15px;
+}
+main > p {
+        font: 1.2rem 'Lexend', sans-serif;
+}
+main > div:last-of-type {
+        display: block;
 }
 blockquote {
         font-style: italic;
@@ -309,6 +330,39 @@ footer {
         background: url(../img/jo-grundy.jpg) no-repeat ;
         background-size: cover;
 }
+#balloon-dog {
+        background: url(../img/balloon-dog.jpg) no-repeat;
+        padding: 200px 0px;
+        background-size: cover;
+}
+#rb-tv {
+        background: url(../img/rb-tv.jpg) no-repeat;
+        padding: 200px 0px;
+        background-size: cover;
+}
+#lion-art {
+        background: url(../img/lion-painting.jpg) no-repeat;
+        padding: 200px 0px;
+        background-size: cover;
+}
+#step-one {
+        background: url(../img/step-1.jpg) no-repeat;
+        padding: 150px;
+        margin-left: 90px;
+        background-size: contain;
+}
+#step-two {
+        background: url(../img//step-2.jpg) no-repeat;
+        padding: 150px;
+        margin-left: 90px;
+        background-size: contain;
+}
+#step-three {
+        background: url(../img/step-3.jpg) no-repeat;
+        padding: 150px;
+        margin-left: 90px;
+        background-size: contain;
+}
 /* ----- NAVIGATION ----- */
 nav {
         text-align: center;
@@ -389,8 +443,13 @@ blockquote > footer {
         background: none;
 }
 /* ----- COL-MD ----- */
-
+@media screen and (min-width: 768px) {
+ 
+}
 /* ----- COL-LG ----- */
+@media screen and (min-width: 1024px) {
+ 
+ }
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
