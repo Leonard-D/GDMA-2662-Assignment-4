@@ -101,6 +101,21 @@ p > a {
         border-radius: 20px;
         color: #fff;
 }
+p > a:hover {
+        background-color: #fff;
+        color: #FECA5C;
+}
+section > p > a {
+        background-color: transparent;
+        border: 2px solid #FECA5C;
+        border-radius: 30px;
+        color: #000;
+}
+section > p > a:hover {
+        border: none;
+        background-color: #FECA5C;
+        color: #fff;
+}
 p {
         font: 1rem 'Lato', sans-serif;
         padding-bottom: 15px;
@@ -409,14 +424,29 @@ footer ul {
         padding: 0px;
         margin-top: 40px;
 }
-footer ul > li {
+footer ul > li > a {
         font-size: 1rem;
+        color: #000;
 }
 footer ul:last-of-type > li:nth-child(5),
 footer ul:last-of-type > li:nth-child(6),
 footer ul:last-of-type > li:nth-child(7),
 footer ul:last-of-type > li:nth-child(8) {
         display: inline-block;
+}
+footer ul:last-of-type > li:nth-child(5) > a,
+footer ul:last-of-type > li:nth-child(6) > a,
+footer ul:last-of-type > li:nth-child(7) > a,
+footer ul:last-of-type > li:nth-child(8) > a {
+        color: #4A4A4A;
+}
+    
+footer ul:last-of-type > li:nth-child(5) > a:hover,
+footer ul:last-of-type > li:nth-child(6) > a:hover,
+footer ul:last-of-type > li:nth-child(7) > a:hover,
+footer ul:last-of-type > li:nth-child(8) > a:hover,
+footer ul > li > a:hover {
+        color: #fff;
 }
 /* ----- COL-SM ----- */
 #hoodie h2,
@@ -441,6 +471,9 @@ footer ul:last-of-type > li:nth-child(8) {
 }
 blockquote > footer {
         background: none;
+}
+a > i:hover {
+        color:#fdc75e
 }
 /* ----- COL-MD ----- */
 @media screen and (min-width: 768px) {
