@@ -123,6 +123,7 @@ p {
 main > p {
         font: 1.2rem 'Lexend', sans-serif;
 }
+
 main > div:last-of-type {
         display: block;
 }
@@ -350,10 +351,13 @@ footer {
         padding: 200px 0px;
         background-size: cover;
 }
-#rb-tv {
+.rb-tv {
         background: url(../img/rb-tv.jpg) no-repeat;
         padding: 200px 0px;
         background-size: cover;
+}
+#lg-rb-tv {
+        display: none;
 }
 #lion-art {
         background: url(../img/lion-painting.jpg) no-repeat;
@@ -392,6 +396,7 @@ nav li {
         margin: 0px 0px 0px 20px;
 }
 nav li > a {
+        font-family: 'Inter', sans-serif;
         color: #fff;
 }
 nav li > a:hover {
@@ -481,7 +486,13 @@ a > i:hover {
 }
 /* ----- COL-LG ----- */
 @media screen and (min-width: 1024px) {
- 
+
+        main > div:last-of-type {
+                display: flex;
+        }
+        #sm-rb-tv {
+                display: none;
+        }
  }
 /*--------------------------------------------------------------
     7.0 - UTILITY
