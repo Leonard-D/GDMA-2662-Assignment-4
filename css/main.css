@@ -53,7 +53,7 @@ html {
 
 /* ----- TYPOGRAPHY ----- */
 
-div > i {
+header > div > div > div > a > i {
         color: #fff;
         padding: 0px 0px 0px 30px;
         font-size: 1.5rem;
@@ -79,7 +79,7 @@ header > div > div > p:first-of-type > span {
 header > div > p:first-of-type,
 header > div > div > p:first-of-type{
         text-align: center;
-        font-family: 'Lexend', sans-serif;
+        font: 1.3rem 'Lexend', sans-serif;
 }
 header > div > p:last-of-type {
         padding-top: 50px;
@@ -105,13 +105,15 @@ p > a:hover {
         background-color: #fff;
         color: #FECA5C;
 }
-section > p > a {
+#artists-sm > section > p > a,
+#artists-lg > section > p > a {
         background-color: transparent;
         border: 2px solid #FECA5C;
         border-radius: 30px;
         color: #000;
 }
-section > p > a:hover {
+#artists-sm > section > p > a:hover,
+#artists-lg > section > p > a:hover {
         border: none;
         background-color: #FECA5C;
         color: #fff;
@@ -124,8 +126,9 @@ main > p {
         font: 1.2rem 'Lexend', sans-serif;
 }
 
-main > div:last-of-type {
-        display: block;
+main > div:last-of-type,
+main > div:last-of-type > section > p {
+        display: inline-block;
 }
 blockquote {
         font-style: italic;
@@ -326,34 +329,39 @@ footer {
         padding: 200px 0px;
         text-align: right;
 }
-#disco-dottie {
+.artists-lg {
+        display: none;
+}
+.disco-dottie {
         background: url(../img/disco-dottie.jpg) no-repeat ;
         background-size: cover;
 }
-#tobia {
+.tobia {
         background: url(../img/tobiafonseca.jpg) no-repeat ;
         background-size: cover;
 }
-#super-doodle {
+.super-doodle {
         background: url(../img/super-doodledo.jpg) no-repeat ;
         background-size: cover;
 }
-#adena {
+.adena {
         background: url(../img/adena-j.jpg) no-repeat ;
         background-size: cover;
 }
-#grundy {
+.grundy {
         background: url(../img/jo-grundy.jpg) no-repeat ;
         background-size: cover;
 }
 #balloon-dog {
         background: url(../img/balloon-dog.jpg) no-repeat;
         padding: 200px 0px;
+        margin-bottom: 30px;
         background-size: cover;
 }
 .rb-tv {
         background: url(../img/rb-tv.jpg) no-repeat;
         padding: 200px 0px;
+        margin-bottom: 30px;
         background-size: cover;
 }
 #lg-rb-tv {
@@ -362,24 +370,24 @@ footer {
 #lion-art {
         background: url(../img/lion-painting.jpg) no-repeat;
         padding: 200px 0px;
+        margin-bottom: 30px;
         background-size: cover;
 }
 #step-one {
         background: url(../img/step-1.jpg) no-repeat;
-        padding: 150px;
-        margin-left: 90px;
+        padding: 120px;
+        margin-left: 30px;
         background-size: contain;
 }
 #step-two {
         background: url(../img//step-2.jpg) no-repeat;
-        padding: 150px;
-        margin-left: 90px;
+        padding: 120px;
+        margin-left: 30px;
         background-size: contain;
 }
 #step-three {
         background: url(../img/step-3.jpg) no-repeat;
         padding: 150px;
-        margin-left: 90px;
         background-size: contain;
 }
 /* ----- NAVIGATION ----- */
@@ -444,8 +452,7 @@ footer ul:last-of-type > li:nth-child(6) > a,
 footer ul:last-of-type > li:nth-child(7) > a,
 footer ul:last-of-type > li:nth-child(8) > a {
         color: #4A4A4A;
-}
-    
+}  
 footer ul:last-of-type > li:nth-child(5) > a:hover,
 footer ul:last-of-type > li:nth-child(6) > a:hover,
 footer ul:last-of-type > li:nth-child(7) > a:hover,
@@ -466,11 +473,11 @@ footer ul > li > a:hover {
 #products > p {
         padding-right: 30px;
 }
-#disco-dottie > p,
-#tobia > p,
-#super-doodle > p,
-#adena > p,
-#grundy > p {
+.disco-dottie > p,
+.tobia > p,
+.super-doodle > p,
+.adena > p,
+.grundy > p {
         font: 2rem 'Lexend', sans-serif;
         color: #fdc75e;
 }
@@ -493,7 +500,56 @@ a > i:hover {
         #sm-rb-tv {
                 display: none;
         }
- }
+        #lg-rb-tv {
+                display: flex;
+        }
+        #steps {
+                flex-flow: nowrap;
+        }
+        #step-three {
+                padding: 120px;
+        }
+        #smilely-money,
+        #outdoor-hoodie,
+        #iphone {
+                margin: 0px;
+        }
+        .artists-sm {
+                display: none;
+        }
+        .artists-lg {
+                display: flex;
+        }
+        .artists-lg > section > div {
+                padding: 70px 0px;
+                margin: 0px 0px 30px 0px;
+        }
+        .artists-lg > section > p:first-of-type {
+                font-size: 1.3rem;
+        }
+        #products > header,
+        #products > p {
+                text-align: left;
+                padding-left: 30px;
+        }
+        .left > header,
+        .left > p {
+                text-align: left;
+        }
+        form > i {
+                padding: 17px 90px;
+                margin: 40px 0px 0px 0px;
+        }
+        input {
+                margin: 40px 0px 0px 70px;
+        }
+        nav {
+                margin: 30px 0px 0px 0px;
+        }
+        header > div > div > div > a > i {
+                padding: 45px 0px 0px 30px;
+        }
+}
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
